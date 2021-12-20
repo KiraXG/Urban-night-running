@@ -1,0 +1,92 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-09-07 16:07:20
+ * @LastEditTime: 2021-09-08 18:25:33
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \project\canvas\index1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/topCanvas.css" type="text/css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgb(39, 39, 39), rgb(212, 212, 212));
+    }
+
+    canvas {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div class="title">都市夜跑</div>
+        <div class="start" onclick="onLoad()">开始游戏</div>
+        <div class="score" onclick="Score()">我的记录</div>
+        <div class="help" onclick="Help()">游戏玩法</div>
+        <div class="exit" onclick="window.close()">退出游戏</div>
+    </div>
+
+    <div id='final'>
+        <div class="isNewScore"></div>
+        <div class="distance"></div>
+        <div class="remake" onclick="onLoad()">重新开始</div>
+        <div class="back" onclick="menu()">返回主菜单</div>
+    </div>
+    <div id="show">
+        <div class="texts">
+            <div class="text">操控你的角色，</div>
+            <div class="text">挑战你自己，</div>
+            <div class="text">让她奔跑的更远吧！</div>
+            <div class="text">操作：点击空格跳跃，</div>
+            <div class="text">可在空中再次点击空格实现二段跳</div>
+        </div>
+        <div class="return" onclick="menu()">返回主菜单</div>
+    </div>
+    
+    <div id='scoreOrder'>
+        <div class="order"></div>
+        <div class="order"></div>
+        <div class="order"></div>
+        <div class="order"></div>
+        <div class="order"></div>
+        <div class="return" onclick="menu()">返回主菜单</div>
+    </div>
+
+    <img id='city' src="imgs/city.png" alt="" style="display: none;">
+
+    <canvas id="cvs" style="display: none;"></canvas>
+
+</body>
+
+<script type="text/javascript" src="js/UI.js"></script>
+<script type="text/javascript" src="js/Game.js"></script>
+<script type="text/javascript" src="js/Player.js"></script>
+<script type="text/javascript" src="js/Obstacle.js"></script>
+<script type="text/javascript" src="js/Road.js"></script>
+
+</html>

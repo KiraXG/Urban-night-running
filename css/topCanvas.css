@@ -1,0 +1,93 @@
+#final,
+#main,
+#show,
+#scoreOrder {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#final,
+#show,
+#scoreOrder {
+    display: none;
+}
+
+#final{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(128, 128, 128);
+}
+
+.title {
+    color: #000;
+    font-size: 80px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.isNewScore,
+.distance {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.order {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.start,
+.score,
+.help,
+.exit,
+.remake,
+.back,
+.return {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.return {
+    display: none;
+}
+
+.start:hover,
+.score:hover,
+.help:hover,
+.exit:hover,
+.remake:hover,
+.back:hover,
+.return:hover {
+    background-color: gray;
+    background-image: linear-gradient(rgb(82, 82, 82), rgb(212, 212, 212), rgb(82, 82, 82));
+}
